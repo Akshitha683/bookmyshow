@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow</title>
+    <link rel="stylesheet" href="bookmyshoe.css">
+    <style>
+        body{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(51, 53, 69);
+    padding: 15px 60px;
+}
+.logo input{
+    margin-left: 20px;
+    height: 30px;
+    width: 535px;
+    border: none;
+    outline: none;
+    border-radius: 3px
+}
+.links a{
+    text-decoration: none;
+    color: rgb(204,204,204);
+    font-size: 16px;
+}
+.links a:hover{
+    color: white;
+}
+.links button{
+    border: none;
+    background-color: rgb(248,68,100);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 5px
+}
+.carousel{
+    background-color:rgb(237,237,237) ;
+}
+marquee img{
+    padding: 10px 6px;
+    border-radius: 15px
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px;
+
+}
+.title a{
+    text-decoration: none;
+    color: rgb(248,68,100);
+}
+.movies{
+    margin-bottom: 250px;
+}
+.movies_list{
+    display: flex;
+    justify-content: center;
+}
+.movies_list img{
+    height: 378px;
+    width: 222px;
+    border-radius: 12px;
+}
+.movies_list div{
+    margin: 0px 15px;
+}
+.movies_list h3{
+    margin: 5px 0px;
+}
+.movies_list p{
+    margin: 0;
+    color: rgb(114,114,114);
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <section class="bookMyShow">
+        <div class="navbar">
+           <div class="logo">
+             <img src="data:image/png;base64,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" height="60px" width="60px" alt="">
+             <input type="text" placeholder="Search for movies,place,sports,events,Activities">
+           </div>
+           <div class="links">
+            <a href="">Bengaluru</a>
+            <button>Sign In</button>
+
+           </div>
+        </div>
+        <div class="carousel">
+            <marquee  scrollAmount="30"  behavior="scroll" direction="right">
+             <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1672137034486_ritvizweb.jpg" alt="">
+             <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1672983148623_ticketweb.jpg" alt="">
+             <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1670502578966_web.jpg" alt="">
+             <img src="" alt="">
+            </marquee>
+        </div>
+        <div class="movies">
+          <div class="title">
+            <h1>Recommended movies</h1>
+            <a href="">See all</a>
+          </div>
+          <div class="movies_list">
+            <div>
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzJLIExpa2Vz,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00346122-juluzjyvxt-portrait.jpg" alt="">
+                <h3>indiana Joned and the Dial of Destiny</h3>
+                <p>Action/Adventure</p>
+        
+            </div>
+            <div>
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-M0sgbGlrZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00348843-ggtgpuweem-portrait.jpg" alt="">
+                <h3>Mr Bachelor</h3>
+                <p>Love Story</p>
+            </div>
+            <div>
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-Ni4xLzEwICAyNTIuN0sgVm90ZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00137215-smxelgjeue-portrait.jpg" alt="">
+                <h3>Adhipurush</h3>
+                <p>Action/Adventure/Mythological</p>
+            </div>
+            <div>
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-MzMuNEsgTGlrZXM%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00338378-smkdqdvlbl-portrait.jpg" alt="">
+                <h3>Sathyaprem Ki Katha</h3>
+                <p>Drama/Musical/Romatic</p>
+            </div>
+            <div>
+                <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@star-icon-202203010609.png,ox-24,oy-615,ow-29:ote-OC4yLzEwICAzNSB2b3Rlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00333063-namevxfsmr-portrait.jpg" alt="">
+                <h3>Spooky College</h3>
+                <p>Horror/Thriller</p>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
